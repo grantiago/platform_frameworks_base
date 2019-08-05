@@ -695,7 +695,7 @@ public class KeyguardStatusView extends GridLayout implements
         mDateSelection = Settings.System.getIntForUser(resolver,
                 Settings.System.LOCKSCREEN_DATE_SELECTION, 0, UserHandle.USER_CURRENT);
 
-        if (mTextClock != null && mShowInfo) {
+        if (mTextClock != null) {
 	    mTextClock.setGravity(Gravity.CENTER);
 	    mTextClock.setLayoutParams(textClockParams);
 	    mTextClock.setPaddingRelative(0, topPadding, 0, 0);
